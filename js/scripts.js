@@ -5,10 +5,12 @@ $(document).ready(function() {
     const sideB = parseInt($("#side2").val());
     const sideC = parseInt($("#side3").val());
 
-    if (sideA && sideB === sideC) {
+    if (sideA == sideB && sideB === sideC) {
       alert("Your triangle is equilateral");
-    } else if {
-      alert("blah");
+    } else if (sideA === sideB !== sideC || sideB === sideC !== sideA || sideC === sideA !== sideB) {
+      alert("You triangle is isoceles");
+    } else {
+      alert("testtesttest")
     }
   });
 });
